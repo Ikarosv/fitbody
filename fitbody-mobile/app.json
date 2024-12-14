@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "automatic",
+    "orientation": "default",
+    "newArchEnabled": true,
+    "web": {
+      "output": "static"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://n"
+        }
+      ]
+    ],
+    "name": "fitbody",
+    "slug": "fitbody",
+    "splash": {
+      "image": "./assets/images/logo-with-name.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#232323"
+    }
+  }
+}

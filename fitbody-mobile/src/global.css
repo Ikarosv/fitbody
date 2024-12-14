@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .heading-1 {
+    @apply text-2xl font-bold font-poppins;
+  }
+
+  .heading-2 {
+    @apply text-xl font-bold font-poppins;
+  }
+
+  .heading-3 {
+    @apply text-lg font-bold font-poppins;
+  }
+
+  .paragraph {
+    @apply text-base font-normal font-poppins;
+  }
+
+  .small-text {
+    @apply text-sm font-light font-poppins;
+  }
+
+  .onBoardingButton {
+    @apply w-5 h-1 bg-white rounded-full;
+  }
+
+  .border-0\.5 {
+    border-width: 0.5px;
+  }
+}

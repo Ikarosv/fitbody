@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "128942765260",
+    "project_id": "fitbody-e7f85",
+    "storage_bucket": "fitbody-e7f85.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:128942765260:android:cc0262c6669a809982be69",
+        "android_client_info": {
+          "package_name": "com.ikarus.fitbody"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "128942765260-pidm6cidoammsc2jug3le72r17f7c0um.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIV7BSkVp1yZ4PYaPuojq7xPNRuYWPz-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "128942765260-pidm6cidoammsc2jug3le72r17f7c0um.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

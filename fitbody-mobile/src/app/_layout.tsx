@@ -7,6 +7,7 @@ import { useFonts } from "expo-font";
 import * as poppins from "@expo-google-fonts/poppins";
 import * as leagueSpartan from "@expo-google-fonts/league-spartan";
 import { useEffect } from "react";
+import { StatusBar } from "expo-status-bar";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -37,6 +38,7 @@ export default function Layout() {
   }
   return (
     <SafeAreaProvider>
+      <StatusBar style="light" translucent />
       <View className="font-poppins relative">
         <Slot />
       </View>

@@ -16,7 +16,7 @@
   }
 
   .paragraph {
-    @apply text-base font-normal font-poppins;
+    @apply text-base font-light font-leagueSpartan;
   }
 
   .small-text {

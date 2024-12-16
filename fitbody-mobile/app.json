@@ -14,7 +14,8 @@
         {
           "origin": "https://n"
         }
-      ]
+      ],
+      "@react-native-google-signin/google-signin"
     ],
     "name": "fitbody",
     "slug": "fitbody",
@@ -22,6 +23,9 @@
       "image": "./assets/images/logo-with-name.png",
       "resizeMode": "contain",
       "backgroundColor": "#232323"
+    },
+    "androind": {
+      "googleServicesFile": "./google-services.json"
     }
   }
 }

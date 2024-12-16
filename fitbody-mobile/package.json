@@ -13,6 +13,7 @@
     "@expo-google-fonts/league-spartan": "^0.2.3",
     "@expo-google-fonts/poppins": "^0.2.3",
     "@expo/vector-icons": "^14.0.4",
+    "@react-native-google-signin/google-signin": "^13.1.0",
     "clsx": "^2.1.1",
     "expo": "^52.0.16",
     "expo-blur": "^14.0.1",

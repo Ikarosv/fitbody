@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { Image, ImageBackground, Text, View } from "react-native";
+import {
+  Image,
+  ImageBackground,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import OnBoarding from "../components/OnBoarding";
+import { router } from "expo-router";
+import { MaterialIcons } from "@expo/vector-icons";
 
 const BG_IMAGES = [
   require("assets/images/beautiful-young-sporty-woman-training-workout-gym 3-3.png"),
@@ -31,14 +39,31 @@ export default function Page() {
   return (
     <ImageBackground
       source={BG_IMAGES[onBoardingIndex]}
-      className="w-screen h-screen bg-background"
+      className=" bg-background relative"
     >
       <View
-        className="absolute inset-0 bg-[#000] w-full h-full"
+        className="absolute inset-0 bg-black w-full h-full"
         style={{
           opacity: onBoardingIndex === 0 ? 0.5 : 0.2,
         }}
       />
+      {onBoardingIndex !== 0 && (
+        <MaterialIcons.Button
+          name="arrow-right"
+          size={24}
+          backgroundColor="transparent"
+          color="#E2F163"
+          onPress={() => router.push("/login")}
+          underlayColor={"transparent"}
+          style={{
+            display: "flex",
+            flexDirection: "row-reverse",
+          }}
+        >
+          Pular
+        </MaterialIcons.Button>
+      )}
+
       <View className="flex items-center justify-center min-h-screen w-full">
         {onBoardingIndex === 0 ? (
           <View className="flex items-center justify-center gap-4">

@@ -3,6 +3,7 @@ import Workout from "../../assets/svgs/workout";
 import MemoNutrition from "../../assets/svgs/nutrition";
 import MemoCommunity from "../../assets/svgs/community";
 import { BlurView } from "expo-blur";
+import { router } from "expo-router";
 
 export default function OnBoarding({
   index,
@@ -28,6 +29,10 @@ export default function OnBoarding({
     "Uma comunidade para você, desafie-se",
   ];
   const icons = [<Workout />, <MemoNutrition />, <MemoCommunity />];
+
+  const start = () => {
+    router.push("/login");
+  };
   return (
     <View className="flex items-center justify-center w-full gap-4">
       <View className="flex items-center justify-center bg-tertiary px-10 h-fit w-full pt-4 pb-7 gap-2">
@@ -45,14 +50,22 @@ export default function OnBoarding({
           shadowRadius: 0,
           elevation: 10,
         }}
-        onPress={() => setIndex(index >= length ? 1 : index + 1)}
+        onPress={() => {
+          if (index >= length) {
+            start();
+            return;
+          }
+          setIndex(index + 1);
+        }}
       >
         <BlurView
           intensity={35}
           className="rounded-full  w-52 h-11 flex items-center justify-center"
           experimentalBlurMethod="dimezisBlurView"
         >
-          <Text className="text-white heading-3">Próximo</Text>
+          <Text className="text-white heading-3">
+            {index >= length ? "Começar" : "Próximo"}
+          </Text>
         </BlurView>
       </TouchableOpacity>
     </View>

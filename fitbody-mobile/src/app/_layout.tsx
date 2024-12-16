@@ -37,7 +37,7 @@ export default function Layout() {
   }
   return (
     <SafeAreaProvider>
-      <View className="font-poppins">
+      <View className="font-poppins relative">
         <Slot />
       </View>
     </SafeAreaProvider>

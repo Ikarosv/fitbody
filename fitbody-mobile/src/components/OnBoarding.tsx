@@ -2,8 +2,8 @@ import { Text, TouchableOpacity, View } from "react-native";
 import Workout from "../../assets/svgs/workout";
 import MemoNutrition from "../../assets/svgs/nutrition";
 import MemoCommunity from "../../assets/svgs/community";
-import { BlurView } from "expo-blur";
 import { router } from "expo-router";
+import BlurButton from "./Buttons/BlurButton";
 
 export default function OnBoarding({
   index,
@@ -42,7 +42,7 @@ export default function OnBoarding({
         </Text>
         <View className="flex flex-row">{onBoardingButton}</View>
       </View>
-      <TouchableOpacity
+      {/* <TouchableOpacity
         className="rounded-full border-0.5 border-solid border-white overflow-hidden"
         style={{
           shadowColor: "#000",
@@ -67,7 +67,20 @@ export default function OnBoarding({
             {index >= length ? "Começar" : "Próximo"}
           </Text>
         </BlurView>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
+      <BlurButton
+        onPress={() => {
+          if (index >= length) {
+            start();
+            return;
+          }
+          setIndex(index + 1);
+        }}
+      >
+        <Text className="text-white heading-3">
+          {index >= length ? "Começar" : "Próximo"}
+        </Text>
+      </BlurButton>
     </View>
   );
 }

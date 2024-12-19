@@ -21,11 +21,12 @@ const BlurButton = ({
   shadowOpacity = 0.25,
   shadowRadius = 0,
   elevation = 10,
+  className,
   ...props
 }: BlurButtonProps) => {
   return (
     <TouchableOpacity
-      className="rounded-full border-0.5 border-solid border-white overflow-hidden"
+      className={`rounded-full border-0.5 border-solid border-white overflow-hidden ${className}`}
       style={{
         shadowColor,
         shadowOpacity,

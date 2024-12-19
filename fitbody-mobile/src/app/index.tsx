@@ -39,10 +39,10 @@ export default function Page() {
   return (
     <ImageBackground
       source={BG_IMAGES[onBoardingIndex]}
-      className=" bg-background relative"
+      className="bg-background relative h-full pt-safe"
     >
       <View
-        className="absolute inset-0 bg-black w-full h-full"
+        className="absolute inset-0 bg-black object-cover"
         style={{
           opacity: onBoardingIndex === 0 ? 0.5 : 0.2,
         }}

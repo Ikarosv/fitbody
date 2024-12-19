@@ -26,6 +26,17 @@
     },
     "androind": {
       "googleServicesFile": "./google-services.json"
+    },
+    "android": {
+      "package": "com.ikaro_sv.fitbody"
+    },
+    "extra": {
+      "router": {
+        "origin": "https://n"
+      },
+      "eas": {
+        "projectId": "5276729c-9eb7-437e-9088-65472d3f21f3"
+      }
     }
   }
 }

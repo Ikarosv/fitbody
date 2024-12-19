@@ -4,19 +4,23 @@
 
 @layer utilities {
   .heading-1 {
-    @apply text-2xl font-bold font-poppins;
+    @apply text-2xl font-bold font-poppinsBold;
   }
 
   .heading-2 {
-    @apply text-xl font-bold font-poppins;
+    @apply text-xl font-bold font-poppinsBold;
   }
 
   .heading-3 {
-    @apply text-lg font-bold font-poppins;
+    @apply text-lg font-bold font-poppinsBold;
+  }
+
+  .subtitle {
+    @apply text-lg font-medium font-leagueSpartan;
   }
 
   .paragraph {
-    @apply text-base font-light font-leagueSpartan;
+    @apply text-base font-light font-leagueSpartanThin;
   }
 
   .small-text {

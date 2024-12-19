@@ -5,8 +5,13 @@ module.exports = {
   theme: {
     fontFamily: {
       default: ["Poppins, sans-serif"],
-      poppins: ["Poppins, sans-serif"],
-      leagueSpartan: ["League Spartan, sans-serif"],
+      sans: ["Poppins, sans-serif"],
+      poppins: ["Poppins", "sans-serif"],
+      poppinsBold: ["Poppins Bold", "sans-serif"],
+      leagueSpartan: ['"League Spartan"', "sans-serif"],
+      leagueSpartanMedium: ['"League Spartan Medium"', "sans-serif"],
+      leagueSpartanBold: ['"League Spartan Bold"', "sans-serif"],
+      leagueSpartanThin: ['"League Spartan Thin"', "sans-serif"],
     },
     extend: {
       colors: {

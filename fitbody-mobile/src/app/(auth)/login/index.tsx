@@ -34,12 +34,7 @@ const Login: React.FC = () => {
             <View className="flex flex-col gap-5">
               {/* Usuario ou email */}
               <View className="flex flex-col gap-2">
-                <Text
-                  className="text-onPrimary paragraph"
-                  style={{
-                    fontFamily: "LeagueSpartan_Medium",
-                  }}
-                >
+                <Text className="text-onPrimary subtitle">
                   Usuário ou Email
                 </Text>
                 <ControlledInput
@@ -50,14 +45,7 @@ const Login: React.FC = () => {
               </View>
               {/* Senha */}
               <View className="flex flex-col gap-2">
-                <Text
-                  className="text-onPrimary paragraph"
-                  style={{
-                    fontFamily: "LeagueSpartan_Medium",
-                  }}
-                >
-                  Senha
-                </Text>
+                <Text className="text-onPrimary subtitle">Senha</Text>
                 <ControlledInput
                   id="password"
                   textContentType="password"
@@ -66,10 +54,8 @@ const Login: React.FC = () => {
                 />
                 <Link href="/forgot-password">
                   <Text
-                    className="text-onPrimary paragraph text-right"
-                    style={{
-                      fontFamily: "LeagueSpartan_Medium",
-                    }}
+                    className="text-onPrimary subtitle text-right"
+                    style={{ fontSize: 12 }}
                   >
                     Esqueceu a senha?
                   </Text>

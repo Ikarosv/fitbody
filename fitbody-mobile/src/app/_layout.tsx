@@ -40,7 +40,7 @@ export default function Layout() {
   return (
     <SafeAreaProvider>
       <StatusBar style="light" translucent />
-      <KeyboardProvider>
+      <KeyboardProvider statusBarTranslucent>
         <View className="font-poppins relative">
           <Slot />
         </View>
